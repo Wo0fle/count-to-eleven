@@ -16,6 +16,8 @@ class PlayState extends FlxState
 	{
 		super.create();
 
+		FlxG.autoPause = false;
+
 		var text:FlxText = new flixel.text.FlxText(0, 0, 0, Std.string(num), 64);
 		text.screenCenter();
 		add(text);
